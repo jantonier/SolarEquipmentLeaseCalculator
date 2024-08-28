@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Equipment Lease Calculator</title>
+    <link rel="stylesheet" href="styles_updated.css">
+</head>
+<body>
+    <h2>Solar Equipment Lease Calculator</h2>
+    <label for="initialPayment">Initial Payment ($):</label>
+    <input type="number" id="initialPayment" placeholder="Enter initial payment">
+
+    <label for="leaseYears">Number of Years:</label>
+    <input type="number" id="leaseYears" placeholder="Enter number of years">
+
+    <label for="annualIncrease">Annual Interest Increment (%):</label>
+    <input type="number" id="annualIncrease" placeholder="Enter annual interest increment">
+
+    <button onclick="calculatePayments()">Calculate Payments</button>
+
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Payment</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody">
+        </tbody>
+    </table>
+
+    <script src="script_with_dollar.js"></script>
+</body>
+</html>
